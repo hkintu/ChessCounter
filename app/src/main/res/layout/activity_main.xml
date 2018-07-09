@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:padding="14dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Player A"
+                android:textColor="#A0522D"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/player_a_pointsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="#420D09"
+                android:gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="0"
+                android:textColor="#FFF"
+                android:textSize="56dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_pdt60"
+                        android:layout_weight="0"/>
+
+                    <Button
+                        android:id="@+id/addOnePoint_a_pawn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+1 Pawn"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_bdt60" />
+
+                    <Button
+                        android:id="@+id/addThreePoints_a_bishop"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+3 Bishop"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_ndt60" />
+
+                    <Button
+                        android:id="@+id/addThreePoint_a_knight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+3 Knight"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_rdt60" />
+
+                    <Button
+                        android:id="@+id/addFivePoint_a_rook"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+5 Rook"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_qdt60" />
+
+                    <Button
+                        android:id="@+id/addEighteenPoint_a_queen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+18 Queen"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Player B"
+                android:textColor="#A0522D"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/player_b_pointsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="#420D09"
+                android:gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="0"
+                android:textColor="#FFF"
+                android:textSize="56dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_pdt60" />
+
+                    <Button
+                        android:id="@+id/addOnePoint_b_pawn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+1 Pawn"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_bdt60" />
+
+                    <Button
+                        android:id="@+id/addThreePoints_b_bishop"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+3 Bishop"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_ndt60" />
+
+                    <Button
+                        android:id="@+id/addThreePoint_b_knight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+3 Knight"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_rdt60" />
+
+                    <Button
+                        android:id="@+id/addFivePoint_b_rook"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+5 Rook"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E08B4513"
+                        android:src="@drawable/chess_qdt60" />
+
+                    <Button
+                        android:id="@+id/addEighteenPoint_b_queen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E08B4513"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="+18 Queen"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E08B4513"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/clear_playerA_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E08B4513"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Remove A"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/clear_playerB_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E08B4513"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Remove B"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
